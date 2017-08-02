@@ -24,8 +24,8 @@ angular
         </md-card-actions>
     </md-card>
     `,
-    controller: ['$scope', 'HUDService', 'libraries', function ($scope, HUDService, libraries) {
-      $scope.libraries = libraries
+    controller: ['$scope', 'HUDService', 'HUDLibraries', function ($scope, HUDService, HUDLibraries) {
+      $scope.libraries = HUDLibraries
       $scope.libraries.map(
         library => HUDService.getHours(library).then(
           hours => library.hours = hours
