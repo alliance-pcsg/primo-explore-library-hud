@@ -1,0 +1,24 @@
+{
+  "name": "primo-explore-library-hud",
+  "version": "1.0.0",
+  "description": "a simple HUD (heads up display) component for embedding in primo-explore.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alliance-PCJWG/primo-explore-library-hud.git"
+  },
+  "keywords": [
+    "library",
+    "catalog",
+    "discovery",
+    "primo",
+    "primo-explore",
+    "exlibris"
+  ],
+  "author": "Nick Budak <budak@lclark.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alliance-PCJWG/primo-explore-library-hud/issues"
+  },
+  "homepage": "https://github.com/Alliance-PCJWG/primo-explore-library-hud#readme"
+}
