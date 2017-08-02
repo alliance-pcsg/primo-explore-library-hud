@@ -3,7 +3,7 @@
 <!-- ![Build Status](https://api.travis-ci.org/Alliance-PCJWG/primo-explore-clickable-logo.svg?branch=master) -->
 
 ## Features
-A "heads-up display" (HUD) is added to the "new search" page to display basic information about one or more libraries. The libraries can be configured with an image, useful links, contact information, and open hours optionally fetched using a web service.
+A "heads-up display" (HUD) component can be added to the "new search" page (or elsewhere) to display basic information about one or more libraries. The libraries can be configured with an image, useful links, contact information, and open hours optionally fetched using a web service.
 
 ### Screenshot
 ![screenshot](screenshot.png)
@@ -29,12 +29,22 @@ Once this package is installed, add `libraryHUD` as a dependency for your custom
 ```js
 var app = angular.module('viewCustom', ['libraryHUD'])
 ```
+
 Note: If you're using the `--browserify` build option, you will need to first import the module with:
 
 ```javascript
 import 'primo-explore-library-hud';
 ```
-You can configure the module by passing an array of library objects. All properties except `name` are optional.
+
+You can embed the HUD on the "new search" page by adding it to your package `home_en_US.html` file.
+
+```html
+<md-content>
+    <library-hud layout-xs="column" layout="row" layout-align="center center"></library-hud>
+</md-content>
+```
+
+You can configure the HUD by passing an array of library objects. All properties except `name` are optional.
 
 | name         | type                  | usage                                                                                                                                                                                                                                       |
 |--------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
